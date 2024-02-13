@@ -1,11 +1,13 @@
 package services;
 
-public class PaypalService implements OnlinePaymentService{
+public class BBService implements OnlinePaymentService {
+
     private Double tax;
     private Double juros;
-    public PaypalService() {
-        tax = 2.0;
-        juros = 1.0;
+
+    public BBService() {
+        tax = 1.5;
+        juros = 0.7;
     }
     @Override
     public double getTax() {
